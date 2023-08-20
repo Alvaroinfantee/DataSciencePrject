@@ -10,7 +10,7 @@ from sklearn.neural_network import MLPClassifier
 
 @st.cache_data
 def load_and_preprocess_data():
-    file_path = r"C:\Users\alvar\Downloads\428412_1_En_25_MOESM1_ESM.csv"
+    file_path = r"428412_1_En_25_MOESM1_ESM.csv"
     data = pd.read_csv(file_path)
     date_columns = ['dob', 'policy_start_dt', 'policy_end_dt']
     for col in date_columns:
